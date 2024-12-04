@@ -48,12 +48,16 @@ useEffect(()=>{
       if (!response.ok) {
         const data = await response.json();
         onSubmitFailure(data.message || 'Sign up failed');
+        
         return;
       }
       const data = await response.json();
       onSubmitSuccess(data.message);
       console.log(data.message)
+      console.log(data);
+      
     } catch (error) {
+      
       onSubmitFailure('Something went wrong, please try again.');
     }
   };
