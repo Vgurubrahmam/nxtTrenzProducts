@@ -46,7 +46,7 @@ const ProductItemDetails = () => {
     setApiStatus(apiStatusConstants.inProgress);
   
     const jwtToken = Cookies.get('jwt_token');
-    const apiUrl = `http://localhost:8000/eachProductData/${id}`;
+    const apiUrl = `https://nxt-trends-backend.vercel.app/eachProductData/${id}`;
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,

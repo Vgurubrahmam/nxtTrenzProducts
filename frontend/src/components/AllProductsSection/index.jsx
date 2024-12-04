@@ -50,7 +50,7 @@ const AllProductsSection = () => {
   const getProducts = async () => {
     setApiStatus(apiStatusConstants.inProgress)
     const jwtToken = Cookies.get('jwt_token')
-    const apiUrl = `http://localhost:8000/getProducts?sort_by=${activeOptionId}&category=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`;
+    const apiUrl = `https://nxt-trends-backend.vercel.app/getProducts?sort_by=${activeOptionId}&category=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`;
     const options = {
       headers: {Authorization: `Bearer ${jwtToken}`},
       method: 'GET',

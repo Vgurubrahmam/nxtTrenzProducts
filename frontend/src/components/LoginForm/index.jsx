@@ -39,7 +39,7 @@ const LoginForm = () => {
   const submitForm = async (event) => {
     event.preventDefault();
     const userDetails = { email, password };
-    const url = 'http://localhost:8000/login';
+    const url = 'https://nxt-trends-backend.vercel.app/login';
     const options = {
       method: 'POST',
       headers: {

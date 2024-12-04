@@ -140,7 +140,7 @@ app.get("/eachProductData/:productId", async (req, res) => {
 });
 
 app.listen(8000, () => {
-  console.log("server is running at http://localhost:8000");
+  console.log("server is running at https://nxt-trends-backend.vercel.app");
 });
 
 module.exports =  app

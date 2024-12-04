@@ -34,7 +34,7 @@ useEffect(()=>{
   const submitForm = async (event) => {
     event.preventDefault();
     const userDetails = { username, password, email };
-    const url = 'http://localhost:8000/signup';
+    const url = 'https://nxt-trends-backend.vercel.app/signup';
     const options = {
       method: 'POST',
       headers: {
