@@ -17,7 +17,7 @@ const generateToken = (user) => {
   });
 };
 mongoose
-  .connect("mongodb://localhost:27017/NxtTrends")
+  .connect("mongodb+srv://Vguru:guru@cluster0.lkgshfk.mongodb.net/NxtTrends?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("Database Connected");
   })
@@ -142,3 +142,5 @@ app.get("/eachProductData/:productId", async (req, res) => {
 app.listen(8000, () => {
   console.log("server is running at http://localhost:8000");
 });
+
+module.exports =  app
